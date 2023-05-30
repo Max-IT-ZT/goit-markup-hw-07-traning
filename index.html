@@ -41,7 +41,16 @@
             </li>
           </ul>
         </nav>
-        <!--! ==========Адрес і номер телефону========== -->
+        <button
+          type="button"
+          class="modal-burger-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="modal-burger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-contact">
           <ul class="header-contact-list list">
             <li class="header-contact-item">
@@ -59,6 +68,85 @@
           </ul>
         </address>
       </div>
+      <!--! ==================PHONE_MENU=================  -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container container-menu-btn">
+          <button class="menu-toggle js-close-menu">
+            <svg class="close-menu-svg" width="8" height="8">
+              <use
+                class="menu-icon"
+                href="./images/icons.svg#icon-close-btn"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-nav-link current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-nav-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="mobile-contact">
+            <ul class="mobile-contact-list list">
+              <li class="mobile-contact-item">
+                <a class="mobile-contact-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a
+                  class="mail-contact-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="mobile-footer-icons">
+            <ul class="mobile-social-list list">
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link link">
+                  <svg class="mobile-social-svg" height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link link">
+                  <svg class="mobile-social-svg" height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link link">
+                  <svg class="mobile-social-svg" height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link link">
+                  <svg class="mobile-social-svg" height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--? =================//PHONE_MENU================  -->
     </header>
     <!--? ===================//HEADER==================  -->
 
@@ -76,7 +164,7 @@
       <!--? ===================//HERO=================== -->
 
       <!--! =================ADVANTAGES================= -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="advantages-container container">
           <h2 class="visually-hidden">Why us?</h2>
           <ul class="advantages-list list">
@@ -130,11 +218,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--? ================//ADVANTAGES================ -->
 
       <!--! ====================WORK==================== -->
-      <section class="work section">
+      <!-- <section class="work section">
         <div class="work-container container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list list">
@@ -167,11 +255,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--? ===================//WORK=================== -->
 
       <!--! ====================TEAM==================== -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="team-container container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
@@ -349,11 +437,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--? ===================//TEAM=================== -->
 
       <!--! =================CUSTOMERS================== -->
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="customers-container container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -401,13 +489,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--? ================//CUSTOMERS================= -->
     </main>
     <!--? ===================//MAIN===================== -->
 
     <!--! ====================FOOTER==================== -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-p">
           <a class="footer-logo link" href="./index.html"
@@ -472,11 +560,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!--? ===================//FOOTER=================== -->
 
     <!--! ================BACKDROP-MODAL================ -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal-btn" data-modal-close>
           <svg class="close-modal-svg" width="8" height="8">
@@ -578,9 +666,16 @@
           <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!--? ===============//BACKDROP-MODAL=============== -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
